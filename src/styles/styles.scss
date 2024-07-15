@@ -1,0 +1,89 @@
+@import './fonts.css';
+@import './vars.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  background-color: $main-bg;
+  color: $main-text;
+
+  font-weight: 400;
+}
+
+a,
+button {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+}
+
+body.dark {
+  background-color: $main-bg-dark;
+  color: $main-text-dark;
+}
+
+.switch,
+.switch-dark {
+  cursor: pointer;
+  position: absolute;
+  width: 50px;
+  height: 26px;
+
+  top: 2%;
+  right: 3%;
+
+  font-size: 14px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding: 0 2px;
+
+  background-color: #4d4d4d;
+  border-radius: 50px;
+
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.switch-dark {
+  background-color: #e0e0e0;
+}
+
+.switch[data-isOn='true'] {
+  justify-content: flex-end;
+}
+
+.switch--radio {
+
+  cursor: pointer;
+  position: absolute;
+  width: 50px;
+  height: 26px;
+
+  top: 2%;
+  right: 3%;
+
+  font-size: 18px;
+
+  background: transparent;
+  outline: none;
+  border: none;
+
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    scale: 1.1;
+  }
+
+}

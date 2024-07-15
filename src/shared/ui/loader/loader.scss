@@ -1,0 +1,29 @@
+.loader {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  &__item {
+    animation: rotate 2s linear infinite;
+  }
+
+  &__text {
+    &--title {
+      font-size: 20px;
+    }
+
+    &--sub {
+      font-size: 14px;
+    }
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
