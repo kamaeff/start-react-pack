@@ -28,12 +28,10 @@ const Switch = ({ isOn, toggleTheme, items, style = 'toggle' }: SwitchProps) => 
           <input
             type="button"
             className='switch--radio'
-            checked={checked}
             value={isOn ? items.start : items.end}
             data-ison={checked}
             onClick={handleToggle}
           />
-
         </>
       )}
     </>

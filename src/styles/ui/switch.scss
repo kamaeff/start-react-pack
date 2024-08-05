@@ -1,12 +1,8 @@
 .switch,
 .switch-dark {
   cursor: pointer;
-  position: absolute;
   width: 50px;
   height: 26px;
-
-  top: 2%;
-  right: 3%;
 
   font-size: 14px;
 
@@ -35,14 +31,9 @@
 }
 
 .switch--radio {
-
   cursor: pointer;
-  position: absolute;
   width: 50px;
   height: 26px;
-
-  top: 2%;
-  right: 3%;
 
   font-size: 18px;
 

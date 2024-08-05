@@ -5,9 +5,13 @@ export type LoaderProps = {
 };
 
 export type SwitchProps = {
+  /* On/Off */
   isOn: boolean;
+  /* Toggle */
   toggleTheme: () => void;
+  /* Range */
   items: { start: string; end: string };
+  /* Select style */
   style?: 'toggle' | 'radio';
 }
 
