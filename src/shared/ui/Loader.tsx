@@ -1,6 +1,5 @@
 import { Loader } from 'lucide-react';
-import './loader.scss';
-import { LoaderProps } from '../../../types/types';
+import { LoaderProps } from '../../types/types';
 
 export const PreLoader = ({ size = 20, title, sub = true }: LoaderProps) => {
   return (

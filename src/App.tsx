@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import Main from './components/Main/Main';
-import { PreLoader } from './shared/ui/loader/Loader';
 import FadeIn from './shared/animations/FadeIn';
-import Header from './components/Header/Header';
+import Header from './components/header/Header';
+import { PreLoader } from './shared/ui/Loader';
 
 const App = () => {
   const [loading, setLoading] = useState<boolean>(true);
