@@ -1,11 +1,8 @@
 import React from 'react';
 import { motion } from "framer-motion";
 
-interface HoverProps {
-  children: React.ReactNode;
-}
 
-const Hover: React.FC<HoverProps> = ({ children }) => {
+const Hover: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <motion.div
       whileHover={{ scale: 1.1 }}
