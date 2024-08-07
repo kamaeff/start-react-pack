@@ -1,21 +1,20 @@
-import './header.scss'
-import { useTheme } from '../../shared/context/ChangeTheme';
+import './header.scss';
+import {useTheme} from '../../shared/context/ChangeTheme';
 import Switch from '../../shared/ui/SwitchButton';
-import { User } from 'lucide-react';
+import {User} from 'lucide-react';
 import Hover from '../../shared/animations/Hover';
 
+/* NOTE: sample header */
 const Header = () => {
-  const { isOn, toggleTheme } = useTheme();
+  const {isOn, toggleTheme} = useTheme();
 
   return (
     <div className='header'>
       <Hover>
-        <div className="header__container">
+        <div className='header__container'>
           <User size={20} className='header__container--icon' />
 
-          <p className="header__container--text">
-            #React App
-          </p>
+          <p className='header__container--text'>#React App</p>
         </div>
       </Hover>
 
@@ -23,7 +22,7 @@ const Header = () => {
       <Switch
         isOn={isOn}
         toggleTheme={toggleTheme}
-        items={{ start: '🌒', end: '☀️' }}
+        items={{start: '🌒', end: '☀️'}}
         style='toggle'
       />
     </div>

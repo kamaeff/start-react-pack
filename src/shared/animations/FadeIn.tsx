@@ -5,6 +5,7 @@ interface AnimationWrapperProps {
   children: ReactNode;
 }
 
+//NOTE: Sample FadeIn animation
 const FadeIn = ({children}: AnimationWrapperProps) => {
   return (
     <motion.div

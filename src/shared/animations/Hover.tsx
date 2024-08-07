@@ -1,6 +1,7 @@
 import React from 'react';
 import {motion} from 'framer-motion';
 
+//NOTE: Sample hover animation
 const Hover: React.FC<{children: React.ReactNode}> = ({children}) => {
   return (
     <motion.div
