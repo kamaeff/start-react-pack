@@ -1,19 +1,13 @@
-import {
-  createContext,
-  ReactNode,
-  useContext,
-  useEffect,
-  useState,
-} from 'react';
+import {createContext, ReactNode, useContext, useEffect, useState} from 'react';
 
 const ThemeContext = createContext({
   isOn: false,
-  toggleTheme: () => { },
+  toggleTheme: () => {},
 });
 
 export const useTheme = () => useContext(ThemeContext);
 
-export const ThemeProvider = ({ children }: { children: ReactNode }) => {
+export const ThemeProvider = ({children}: {children: ReactNode}) => {
   const [isOn, setIsOn] = useState(() => {
     const theme = localStorage.getItem('theme');
     return theme === 'dark';
@@ -29,7 +23,7 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   };
 
   return (
-    <ThemeContext.Provider value={{ isOn, toggleTheme }}>
+    <ThemeContext.Provider value={{isOn, toggleTheme}}>
       {children}
     </ThemeContext.Provider>
   );

@@ -1,9 +1,8 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import TransitionAnimation from '../animations/Transition';
-import { SwitchProps } from '../../types/types';
+import {SwitchProps} from '../../types/types';
 
-
-const Switch = ({ isOn, toggleTheme, items, style = 'toggle' }: SwitchProps) => {
+const Switch = ({isOn, toggleTheme, items, style = 'toggle'}: SwitchProps) => {
   const [checked, setChecked] = useState(isOn);
 
   const handleToggle = () => {
@@ -26,7 +25,7 @@ const Switch = ({ isOn, toggleTheme, items, style = 'toggle' }: SwitchProps) => 
       ) : (
         <>
           <input
-            type="button"
+            type='button'
             className='switch--radio'
             value={isOn ? items.start : items.end}
             data-ison={checked}

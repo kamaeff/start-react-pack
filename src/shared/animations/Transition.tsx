@@ -1,10 +1,10 @@
-import { motion } from 'framer-motion';
+import {motion} from 'framer-motion';
 
-const TransitionAnimation = ({ children }: { children: any }) => (
+const TransitionAnimation = ({children}: {children: any}) => (
   <motion.div
     className='handle'
     layout
-    transition={{ type: 'spring', stiffness: 700, damping: 30 }}
+    transition={{type: 'spring', stiffness: 700, damping: 30}}
   >
     {children}
   </motion.div>

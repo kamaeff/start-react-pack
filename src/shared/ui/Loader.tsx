@@ -1,7 +1,7 @@
-import { Loader } from 'lucide-react';
-import { LoaderProps } from '../../types/types';
+import {Loader} from 'lucide-react';
+import {LoaderProps} from '../../types/types';
 
-export const PreLoader = ({ size = 20, title, sub = true }: LoaderProps) => {
+export const PreLoader = ({size = 20, title, sub = true}: LoaderProps) => {
   return (
     <div className='loader'>
       <Loader size={size} className='loader__item' />

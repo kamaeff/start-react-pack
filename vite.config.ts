@@ -1,35 +1,34 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import { VitePWA, VitePWAOptions } from "vite-plugin-pwa";
+import {defineConfig} from 'vite';
+import react from '@vitejs/plugin-react';
+import {VitePWA, VitePWAOptions} from 'vite-plugin-pwa';
 
 // NOTE: If u need todo web-app
-
 const vitePWA: Partial<VitePWAOptions> = {
-  registerType: "autoUpdate",
+  registerType: 'autoUpdate',
 
-  outDir: "dist",
+  outDir: 'dist',
   workbox: {
     clientsClaim: true,
     skipWaiting: true,
   },
 
   manifest: {
-    start_url: "/",
-    name: "title",
-    short_name: "title",
-    description: "description",
-    theme_color: "#ffffff",
-    display: "standalone",
+    start_url: '/',
+    name: 'title',
+    short_name: 'title',
+    description: 'description',
+    theme_color: '#ffffff',
+    display: 'standalone',
     icons: [
       {
-        src: "/android-chrome-192x192.png",
-        sizes: "192x192",
-        type: "image/png",
+        src: '/android-chrome-192x192.png',
+        sizes: '192x192',
+        type: 'image/png',
       },
       {
-        src: "/android-chrome-512x512.png",
-        sizes: "512x512",
-        type: "image/png",
+        src: '/android-chrome-512x512.png',
+        sizes: '512x512',
+        type: 'image/png',
       },
     ],
   },
@@ -40,7 +39,7 @@ const vitePWA: Partial<VitePWAOptions> = {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "./",
+  base: './',
   server: {
     port: 3000,
   },

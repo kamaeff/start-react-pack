@@ -15,8 +15,7 @@ export type SwitchProps = {
   /* Toggle */
   toggleTheme: () => void;
   /* Range items */
-  items: { start: string; end: string };
+  items: {start: string; end: string};
   /* Select style */
   style?: 'toggle' | 'radio';
-}
-
+};
